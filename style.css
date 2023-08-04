@@ -9,6 +9,7 @@ html body{
 }
 /* HEADER CSS */
 #header{
+    grid-row: 1/span 1;
     font-family: 'Bebas Neue', sans-serif;
     text-align: left;
     display: grid;
@@ -16,6 +17,7 @@ html body{
     grid-template-rows: auto;
     border-bottom: 33px double #6e6bcc;
     align-items: flex-end;
+    box-shadow: 0px 18px 20px -10px #de39ed85;
 }
 
 #intro{
@@ -47,11 +49,10 @@ html body{
     height: 70%;
 }
 nav{
-    align-items: ;
-    font-size: 25px;
+    margin-top: 84px;
 }
 nav a{
-    font-size: 25px;
+    font-size: 40px;
     color:aliceblue;
     font-weight: bold;
 }
@@ -87,16 +88,55 @@ https://alvarotrigo.com/blog/css-text-animations/#2.-text-colour-animation-effec
 #about{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    margin-top: 95px;
+    border-bottom: 33px double #ac3e0afc;
+    border-left: 33px double #b6476b;
+    padding: 0px 41px;
+    padding-top: 45px;
+    box-shadow: -13px 6px 20px 3px #f8a9ff57;
+    grid-row: 2/span 1;
 }
 #about-text{
     grid-column: 1/ span 1;
     font-size: 25px;
 }
+#about-text h1{
+    font-size: 900;
+}
 #buttons{
-
-    background-image: url("images/bubbles.jpg");
-    justify-self: center;
+    display: flex;
+    grid-column: 2/ span 1;
+    flex-direction: column-reverse;
+    align-self: center;
+    grid-row: 1/ span 1;
+    margin-top: -87px;
+}
+#buttons button{
+    margin: 27px;
+    background-color: #b480299c;
+    border: 11px solid;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+}
+/* https://css-tricks.com/the-shapes-of-css/#aa-triangle-left-shape */
+#triangle {
+    grid-column: 2/ span 1;
+    width: 100%;
+    height: 0;
+    border-right: 355px dotted;
+    border-bottom: 367px solid #311261;
+    grid-row: 1/ span 1;
+    z-index: -2;
+    rotate: 20deg;
+}
+#mini-triangle {
+    grid-column: 2/ span 1;
+    width: 100%;
+    height: 0;
+    border-right: 367px solid rgb(26 89 232 / 75%);
+    border-bottom: 326px solid #2f161600;
+    grid-row: 1/ span 1;
+    z-index: -1;
 }
 #resumeModalLabel{
     color: whitesmoke;
@@ -114,11 +154,88 @@ iframe{
 
 /* PROJECTS CSS */
 #projects{
-    background-color: aquamarine;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-row: 3/span 1;
+    grid-column: 1/span 1;
+    border-right: 33px double #2949b49c;
+    box-shadow: 11px 7px 20px 0px #7180ffc2;
 }
-footer{
-    background-color: brown;
+#one{
+    background-image: linear-gradient(darkBlue, skyblue, lightpink);
+}
+#two{
+    background-image: linear-gradient( skyblue, rgb(61, 163, 204),rgb(255, 230, 65));
+}
+#three{
+    background-image: linear-gradient(rgb(11, 3, 102), rgb(193, 105, 234), lightpink);
+}
+/* CONTACT/FOOTER CSS */
+#contact{
+    display: flex;
+    grid-column: 1/span 1;
+    grid-row: 4/span 1;
+    background-image: linear-gradient(
+        -225deg,
+        #5733d9 0%, 
+        #db582b 19%,
+        #7d2ed1 29%,
+        #5232fade 67%,
+        #db2b4c 100%
+        );
+    background-position: 0;
+    animation: rotate 10s ease infinite;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+#contact a{
+    z-index: 2;
+    position: relative;
+    
+}
+#border{
+    grid-row: 4/ span 1;
+    grid-column: 1/span 1;
+    width:98%;
+    background: black;
+    z-index: 1;
+    justify-self: center;
+    margin: 9px;
 }
 
+@keyframes rotate {
+    0%{
+        background-image: linear-gradient(
+        -200deg,
+        #5733d9 0%, 
+        #db582b 19%,
+        #7d2ed1 29%,
+        #5232fade 67%,
+        #db2b4c 100%
+        );
+    }
+    50%{  
+        background-image: linear-gradient(
+        -190deg,
+        #5733d9 0%, 
+        #db582b 19%,
+        #7d2ed1 29%,
+        #5232fade 67%,
+        #db2b4c 100%
+        );
+    } 
 
+    100%{
+        background-image: linear-gradient(
+            -180deg,
+            #5733d9 0%, 
+            #db582b 19%,
+            #7d2ed1 29%,
+            #5232fade 67%,
+            #db2b4c 100%
+            );
+    }
+}
 
