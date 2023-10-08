@@ -1,0 +1,43 @@
+body{
+    background-image: url(2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+}
+
+#about{
+    background-image: url(1.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.app{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border-radius: 20px;
+}
+#searchbar img{
+    height: 20%;
+    width: auto;
+    top: 10%;
+    position: absolute;
+}
+#bar{
+    top: 10%;
+    position: absolute;
+    height: 25px;
+    background-color: antiquewhite;
+    width: 200px;
+    border: black solid  2px;
+    border-radius: 20px;
+}
+#phoneBody{
+    position: sticky;
+    top: 25%;
+}
+#searchbar {
+    display: flex;
+    flex-direction: row;
+    
+}
