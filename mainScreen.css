@@ -41,3 +41,40 @@ body{
     flex-direction: row;
     
 }
+#transitionTop{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    
+  }
+  #transitionBottom{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+
+  }
+
+.topTransition{
+    animation: transitionTop 2s ease-in forwards;
+  }
+  .bottomTransition{
+    animation: transitionBottom 2s ease-in forwards;
+    
+  }
+  .show{
+    animation: visibility 2s forwards;
+    animation-delay: 2s;
+    z-index: 3;
+  }
+  .black{
+    background-color: #1c2020;
+  }
+  #flowerLoad{
+    height: 25%;
+    position: sticky;
+    top: 50%;
+    opacity: 0%;
+  }
