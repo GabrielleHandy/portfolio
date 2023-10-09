@@ -2,24 +2,90 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <title>Portfolio page</title>
     <link rel="stylesheet" href="styles/mainScreen.css">
+    
 </head>
 <body>
     <div id="transitionTop" class="black"></div>
-     <img id="flowerLoad" src="/newVersion/images/mainScreen/flowerLoad.gif" alt="">
+     <img id="flowerLoad" src="images/mainScreen/flowerLoad.gif" alt="">
     <div id="transitionBottom" class="black"></div>
-    <div id="header"></div>
-    <div id="searchbar"><img src="images/mainScreen/searchLogo.svg" alt="search icon"><div id="bar"></div></div>
-    <div id="phoneBody">
-        
-        <div id="about" class="app"></div>
-        <div id="projects" class="app"></div>
-        <div id="contact" class="app"></div>
+    <div id="header">
+        <p id="time">HH:MM</p>
+         <div id="battery">
+            <p id="batteryPercentage"></p>
+            <img id="batteryImg" src="" srcset="">
+         </div>
     </div>
-    
+    <div id="searchbar"><img src="images/mainScreen/searchLogo.svg" alt="search icon"><div id="bar"></div></div>
+    <p id="phoneBody">
+        
+    <button id="about" type="button" data-toggle="collapse" aria-expanded="false" class="btn app"  data-toggle="collapse" data-target="#aboutDiv"  aria-expanded="false" aria-controls="aboutDiv">
+        </button>
+        
+        <button  id="projects"  class="btn  app" data-toggle="collapse" data-target="#projectsDiv" role="button" aria-expanded="false" aria-controls="collapseExample">
+            
+        </button>
+        <button  id="contact"  class="btn  app" data-toggle="collapse" data-target="#contactsDiv" role="button" aria-expanded="false" aria-controls="collapseExample">
+            
+        </button>
+        
+    </p>
+    <div id="aboutMe" class="info closed">
+        <button class="exit"><h2>X</h2></button>
+        <img src="images/mainScreen/me.png" alt="">
+            <section id="about-text" class=".closed">
+                <h1>About Gabrielle</h1>
+                <p>Gabrielle started her software developer journey in 2021. Once she came back from her study abroad in China, she had a heightened awareness and appreciation for tech and its ever-growing importance in society. It was then she decided, after graduating college, to combine her love of discovering new horizons and tackling challenges to dive headfirst into software engineering.</p>
+            </section>
+        
+    </div>
+    <div id="contacts" class="info closed">
+        <button class="exit"><h2>X</h2></button>
+            <section id="contactBody" class=".closed">
+                <h2>Contacts</h2>
+                <img src="images/mainScreen/me.png" alt="">
+                <img src="images/mainScreen/me.png" alt="">
+                <img src="images/mainScreen/me.png" alt="">
+            </section>
+        
+    </div>
+    <div id="projectCard" class="info closed">
+        <button class="exit"><h2>X</h2></button>
+            <section id="projectList" class=".closed">
+                <div class="project">
+                    <h2>project 1</h2>
+                    <img src="images/mainScreen/me.png" alt="">
+                    <section id="description">
+                        <a id="github" href=""></a>
+                        <a id="live" href=""></a>
+                    </section>
+                </div>
+                <div class="project">
+                    <h2>project 2</h2>
+                    <img src="images/mainScreen/me.png" alt="">
+                    <section id="description">
+                        <a id="github" href=""></a>
+                        <a id="live" href=""></a>
+                    </section>
+                </div>
+
+                <div class="project">
+                    <h2>Project 3</h2>
+                    <img src="images/mainScreen/me.png" alt="">
+                    <section id="description">
+                        <a id="github" href=""></a>
+                        <a id="live" href=""></a>
+                    </section>
+                </div>
+              
+            </section>
+        
+    </div>
+ 
+
     <script src="mainScreen.js"></script>
-    
+
 </body>
 </html>
