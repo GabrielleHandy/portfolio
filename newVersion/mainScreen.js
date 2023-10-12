@@ -4,9 +4,6 @@ const topTransition = document.getElementById("transitionTop")
 const bottomTransition=document.getElementById("transitionBottom")
 const flowerLoad = document.getElementById("flowerLoad")
 const time = document.getElementById("time")
-const about = document.getElementById("aboutMe")
-const projects = document.getElementById("projectCard")
-const contacts = document.getElementById("contacts")
 
 const batteryLevelImgs = {8: "images/battery/80-100.svg",
 5:"images/battery/50-80.svg",
@@ -35,6 +32,8 @@ let text = d.toLocaleTimeString('en-us',{hour: "2-digit", minute: "2-digit"});
 time.innerText =text
 
 }
+
+
 setTime()
 
 function updateBattery(battery){
@@ -63,19 +62,35 @@ navigator.getBattery().then(function(battery) {
         updateBattery(battery)
       };
   });
-
-  function open(div){
-    switch (div) {
-        case "about":
-            about.classList.remove("closed")
-            about.classList.add("open")
-            about.querySelector(".exit").addEventListener("click", ()=>{
-
-            })
-            break;
+  function closeOpenApps(cards){
     
-        default:
-            break;
+    for (let card of cards){
+        if (card.classList.contains("open")){
+            card.querySelector(".exit").click()
+            setTimeout(()=>{
+                card.classList.remove("closed")}, 1500)
     }
+  }
+}
+  function open(button){
+    closeOpenApps(cards);
+    div = document.getElementById(button.dataset.target)
+            div.querySelector(".exit").addEventListener("click", ()=>{
+                div.classList.add("closed")
+                div.classList.remove("open")
+                setTimeout(()=>{
+                div.classList.remove("closed")}, 1500)
+            })
+            
+            div.classList.remove("closed")
+            div.classList.add("open")
+            
+    
 
   }
+  const cards = document.getElementById("cards").children
+  const phoneBodyApps = document.getElementById("phoneBody").children
+  for(let button of phoneBodyApps){
+    button.addEventListener("click", (e)=> {open(e.target)})
+  }
+ 

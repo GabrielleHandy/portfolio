@@ -21,53 +21,57 @@
     <div id="searchbar"><img src="images/mainScreen/searchLogo.svg" alt="search icon"><div id="bar"></div></div>
     <p id="phoneBody">
         
-    <button id="about" type="button" data-toggle="collapse" aria-expanded="false" class="btn app"  data-toggle="collapse" data-target="#aboutDiv"  aria-expanded="false" aria-controls="aboutDiv">
+    <button id="about" class="btn app" data-target="aboutMe">
         </button>
         
-        <button  id="projects"  class="btn  app" data-toggle="collapse" data-target="#projectsDiv" role="button" aria-expanded="false" aria-controls="collapseExample">
+        <button  id="projects"  class="app"  data-target="projectCard" >
             
         </button>
-        <button  id="contact"  class="btn  app" data-toggle="collapse" data-target="#contactsDiv" role="button" aria-expanded="false" aria-controls="collapseExample">
+        <button  id="contact"  class=" app" data-target="contacts" >
             
         </button>
         
     </p>
-    <div id="aboutMe" class="info closed">
+    <section id="cards">
+
+    
+    <div id="aboutMe" class="info">
         <button class="exit"><h2>X</h2></button>
         <img src="images/mainScreen/me.png" alt="">
-            <section id="about-text" class=".closed">
+            <section id="about-text" class="">
                 <h1>About Gabrielle</h1>
                 <p>Gabrielle started her software developer journey in 2021. Once she came back from her study abroad in China, she had a heightened awareness and appreciation for tech and its ever-growing importance in society. It was then she decided, after graduating college, to combine her love of discovering new horizons and tackling challenges to dive headfirst into software engineering.</p>
             </section>
         
     </div>
-    <div id="contacts" class="info closed">
+    <div id="contacts" class="info">
         <button class="exit"><h2>X</h2></button>
-            <section id="contactBody" class=".closed">
+            <section id="contactBody" >
                 <h2>Contacts</h2>
-                <img src="images/mainScreen/me.png" alt="">
-                <img src="images/mainScreen/me.png" alt="">
-                <img src="images/mainScreen/me.png" alt="">
+                <div></div>
+                <img class="contactImg" src="images/mainScreen/me.png" alt="">
+                <img class="contactImg"src="images/mainScreen/me.png" alt="">
+                <img class="contactImg" src="images/mainScreen/me.png" alt="">
             </section>
         
     </div>
-    <div id="projectCard" class="info closed">
+    <div id="projectCard" class="info">
         <button class="exit"><h2>X</h2></button>
-            <section id="projectList" class=".closed">
+            <section id="projectList" >
                 <div class="project">
                     <h2>project 1</h2>
                     <img src="images/mainScreen/me.png" alt="">
                     <section id="description">
-                        <a id="github" href=""></a>
-                        <a id="live" href=""></a>
+                        <a class="github" href=""></a>
+                        <a class="live" href=""></a>
                     </section>
                 </div>
                 <div class="project">
                     <h2>project 2</h2>
                     <img src="images/mainScreen/me.png" alt="">
                     <section id="description">
-                        <a id="github" href=""></a>
-                        <a id="live" href=""></a>
+                        <a class="github" href="">github</a>
+                        <a clas="live" href="">live link</a>
                     </section>
                 </div>
 
@@ -75,13 +79,17 @@
                     <h2>Project 3</h2>
                     <img src="images/mainScreen/me.png" alt="">
                     <section id="description">
-                        <a id="github" href=""></a>
-                        <a id="live" href=""></a>
+                        <a class="github" href=""></a>
+                        <a class="live" href=""></a>
                     </section>
+                    <h3>
+                        Got to Github to <a class="github" href="">see more projects</a>
+                    </h3>
+                    
                 </div>
               
             </section>
-        
+        </section>
     </div>
  
 
