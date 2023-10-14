@@ -1,0 +1,139 @@
+body{
+    background-image: url(/newVersion/images/phoneBackground.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    
+    
+}
+.black{
+  background-color: #1c2020;
+}
+#signIn{
+    background-image: url(/newVersion/images/profilePic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    border-radius:200px;
+    position: absolute;
+    top:30%; 
+}
+
+#flowerLoad{
+  height: 25%;
+  position: absolute;
+  left: 25%;
+  top: 40%;
+  opacity: 0%;
+}
+.topTransition{
+  animation: transitionTop 2s ease-in forwards;
+}
+.bottomTransition{
+  animation: transitionBottom 2s ease-in forwards;
+  
+}
+.show{
+  animation: visibility 2s forwards;
+  animation-delay: 2s;
+  z-index: 3;
+}
+
+#login{
+    background-color: whitesmoke;
+    height: 50px;
+    width: 90%;
+    position: absolute;
+    top: 52%;
+    border-radius: 100px;
+    box-shadow: inset 0px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+}
+
+#login p {
+    width: 220px;
+    
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(66, 89, 24); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typeAnimation 3.5s steps(40, end),
+      blinker .75s step-end infinite;
+
+  }
+  button{
+    height: 50px;
+    width: auto;
+    background-color: #88a156;
+    border-radius: 10px;
+    border: white 15px;
+    box-shadow: inset rgb(66, 89, 24) 0px 1px 7px 2px;
+    position: absolute;
+    bottom: 30%;
+    
+  }
+  button:hover{
+    box-shadow:  rgb(66, 89, 24) 0px 1px 7px 2px;
+    border: rgb(224, 241, 195) solid 1px;
+  }
+
+  #transitionTop{
+    width: 100%;
+    position: absolute;
+    top: 0;
+
+    
+  }
+  #transitionBottom{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -10px;
+
+  }
+  @keyframes typeAnimation {
+    from { width: 0 }
+    to { width: 220px}
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blinker {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(66, 89, 24); }
+  }
+
+  @keyframes transitionTop {
+  from{
+    height: 0%;
+  }
+     to{
+    height: 50%;
+    
+    z-index:2;}
+
+    
+  }
+
+  @keyframes transitionBottom {
+    from{
+      height: 0%;
+    }
+       to{
+      height: 60%;
+      
+      z-index:2;}
+  
+      
+    }
+
+    @keyframes visibility {
+      from{opacity: 0%;}
+      to {opacity: 100%;
+      }
+    }
