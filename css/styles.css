@@ -103,7 +103,16 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+#circle{
 
+  background: linear-gradient( -225deg, #5733d9 0%, #db582b 19%, #7d2ed1 29%, #5232fade 67%, #db2b4c 100% );
+  border-radius: 50%;
+  
+  margin-left: 25%;
+    margin-right: 50%;
+  width: 40%;
+  height: 90%;
+}
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -250,6 +259,10 @@ a {
 }
 a:hover {
   color: var(--bs-link-hover-color);
+}
+a.text-gradient:hover {
+  border-bottom: #000 2px solid;
+  padding: 5px;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -11731,4 +11744,5 @@ html {
     width: 1.5vw;
     left: -2vw;
   }
+ 
 }
