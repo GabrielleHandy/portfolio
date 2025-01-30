@@ -92,32 +92,18 @@ window.onload = function() {
     if(experienceDiv){
        const jobHistory = [
         {
+            "Job Title": "Junior Software Developer",
+            "Date": "December 2023 to Present",
+            "Company": "Interapt/CVS Health",
+            "Location": "Remote",
+            "Job Summary": "I develop and maintain dynamic web applications using Angular, conduct unit tests, perform code reviews, fix bugs, take ownership of stories creating brand new components and functionality to enhance web applications."
+          },
+        {
           "Job Title": "Information Specialist",
-          "Date": "February 2023 to Present",
+          "Date": "February 2023 to December 2023",
           "Company": "Forsyth County Public Library",
           "Location": "Winston-Salem, NC",
           "Job Summary": "Design and create eye-catching flyers and displays to promote library programs and events, leveraging graphic design skills. Efficiently manage library resources and circulation using automated software systems. Assist library patrons in resolving technology-related inquiries, demonstrating strong technical aptitude. Responsible for maintaining and organizing digital records and data using Microsoft Excel. Utilize library software to streamline processes such as issuing library cards, reserving rooms, and managing book holds."
-        },
-        {
-          "Job Title": "Developer Internship at Shopify",
-          "Date": "May 2022- June 2022 (Left early for personal reasons)",
-          "Company": "Shopify Canada",
-          "Location": "Canada",
-          "Job Summary": "Hands-on experience with writing and pushing code that improved the backend code base of Shopify’s product with guided mentorship. Followed Agile methodology, and participated in daily scrum meetings, project planning, and sprints involving multiple areas of development. Experience with Ruby."
-        },
-        {
-          "Job Title": "Software Engineering Fellowship",
-          "Date": "November 2021- January 2022",
-          "Company": "Hackbright Academy",
-          "Location": "San Francisco, CA",
-          "Job Summary": "Exponentially grew knowledge and coding experience using hands-on practice, projects, and guided mentorship. Part of an empowered team working on delivering quality software projects in an agile environment. Examples of projects include: Movie ratings app: Tech used: HTML, Jinja2, Flask, SQLAlchemy. Shark-themed hangman game: Tech used: Ajax, Javascript, Flask. Melon shopping site -Backend- Tech used: Flask, Jinja. Followed Agile methodology, and participated in daily scrum meetings, project planning, and sprints."
-        },
-        {
-          "Job Title": "Manga Translator with Tech and Translation Skills",
-          "Date": "March 2020 to May 2020",
-          "Company": "JianLai Global",
-          "Location": "Remote",
-          "Job Summary": "Skillfully translated Chinese manga content for a Chinese manga website, employing bilingual proficiency. Edited and enhanced previously translated work for accuracy and clarity. Developed and maintained a comprehensive glossary to streamline future translation projects."
         }
       ]
 
@@ -130,7 +116,7 @@ window.onload = function() {
               "Location": "Remote",
               "Date": "August 2023 - November 2023",
               "Degree": "Coding Bootcamp",
-              "Degree Description": "Coding boot camp program"
+              "Degree Description": "Full Stack Java Developer Immersive"
             },
             {
               "School": "Hackbright Academy",
@@ -156,12 +142,12 @@ window.onload = function() {
           ];
 
 
-          const skills = { "Languages": ["Python", "JavaScript (AJAX, JSON)", "HTML", "CSS", "SQL", "Java"],
-          "Frameworks & Libraries": ["Flask", "React", "Bootstrap", "Jinja", "SQLAlchemy", "Spring Boot"],
+          const skills = { "Languages": ["Typescript", "JavaScript (AJAX, JSON)", "HTML", "CSS", "Java", "Python"],
+          "Frameworks & Libraries": ["Angular","Spring Boot", "Flask", "React", "Bootstrap", "Jinja", "SQLAlchemy"],
           "Database & Industry Tools": ["SQL", "Git", "GitHub", "Command Line", "AWS", "Maven"],
           "Methodologies & Practices": ["Agile and Scrum methodologies", "User stories", "Test-Driven Development (TDD)", "Behavior-Driven Development (BDD)", "Pair programming"],
           "Security & Authentication": ["Spring Security", "JWT"],
-          "API Development & Testing": ["REST API Development", "JUnit", "Cucumber", "MockMVC", "Rest Assured", "Postman"]}
+          "API Development & Testing": ["Karma","REST API Development", "JUnit", "Cucumber", "MockMVC", "Rest Assured", "Postman"]}
 
           populateResume(experienceDiv,jobHistory,educationDiv, educationHistory, skillsDiv, skills)
           
